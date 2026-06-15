@@ -1,0 +1,33 @@
+OKIBA - ponto atual e próximos passos
+
+Ponto atual:
+- O projeto já está funcionando com Laravel 11, PHP 8.2 e SQLite.
+- As cartas podem ser organizadas por TCG.
+- Existem APIs para importar cartas de Pokémon, Yu-Gi-Oh e Magic.
+- O admin já permite cadastrar e editar cartas, produtos selados, acessórios e singles manuais.
+- O projeto já foi testado e passou nas verificações básicas.
+
+Melhorias já aplicadas:
+- Filtro por TCG nos produtos.
+- Tipos de produto para singles, caixas seladas, boosters, acessórios e decks.
+- Documentação atualizada no README.
+- Scripts de setup para Windows e Linux/Mac.
+
+Passos necessários para continuar o desenvolvimento:
+1. Executar o setup na máquina nova.
+2. Rodar as migrations e os testes.
+3. Importar cartas das APIs públicas quando necessário.
+4. Cadastrar manualmente cartas dos TCGs sem API pública: Lorcana, Riftbound e Flesh and Blood.
+5. Ajustar preços, estoque e imagens pelo painel admin.
+6. Melhorar o layout do admin e criar seeders com dados de exemplo.
+
+Comandos principais:
+- Windows: .\setup-windows.ps1
+- Linux/Mac: bash setup-unix.sh
+- Migrations: php artisan migrate --force
+- Testes: php artisan test
+- Servidor: php artisan serve
+
+Observação:
+- O banco local usa SQLite e precisa do arquivo database/database.sqlite.
+- O projeto deve ser continuado a partir do painel admin e dos comandos de importação.
